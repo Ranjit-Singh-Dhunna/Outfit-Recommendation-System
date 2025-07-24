@@ -5,28 +5,28 @@ body {
     background-color: hsl(67, 47%, 82%);
     margin: 0;
     padding: 0;
-    backdrop-filter: blur(35px); /* This creates the blur effect */
+    backdrop-filter: blur(35px); 
     -webkit-backdrop-filter: blur(25px);  
     background: 
         radial-gradient(
             circle at 20% 30%, 
-            hsla(142, 91%, 31%, 0.357),  /* Vibrant green */
+            hsla(142, 91%, 31%, 0.357),  
             transparent 50%
         ),
         radial-gradient(
             circle at 80% 60%, 
-            rgba(57, 67, 2, 0.183),  /* Soft blue */
+            rgba(57, 67, 2, 0.183),  
             transparent 90%
         ),
         radial-gradient(
             circle at 40% 80%, 
-            hsla(169, 92%, 42%, 0.395),  /* Light yellow */
+            hsla(169, 92%, 42%, 0.395), 
             transparent 50%
         ),
         linear-gradient(
             to bottom right, 
-            hsl(240, 47%, 27%),  /* Deep purple-black */
-            hsla(74, 77%, 14%, 0.949)   /* Rich dark blue */
+            hsl(240, 47%, 27%),  
+            hsla(74, 77%, 14%, 0.949)   
         );
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -53,29 +53,29 @@ body {
     padding: 1.75% 0 3.2% 0;
     
     
-    /* Text Stretching */
+   
    
     transform: scaleX(2.9) scaleY(2.6);
     
-    /* Gradient with Blurred Edges */
+    
     background: 
         linear-gradient(90deg, 
-        rgb(216, 255, 174) 0%,    /* Soft Blue */
-        hsl(181, 100%, 50%) 50%,   /* Soft Green */
-        hsl(128, 83%, 84%) 100%    /* Soft Red */
+        rgb(216, 255, 174) 0%,    
+        hsl(181, 100%, 50%) 50%,   
+        hsl(128, 83%, 84%) 100%    
         );
     background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     
-    /* Glow + Blur Effects */
+   
     text-shadow: 
-        0 0 10px rgba(50, 252, 252, 0.58),  /* Blue glow */
-        0 0 20px rgba(59, 227, 129, 0.694),  /* Green glow */
-        0 0 30px rgba(255, 255, 255, 0.916);   /* Red glow */
+        0 0 10px rgba(50, 252, 252, 0.58),  
+        0 0 20px rgba(59, 227, 129, 0.694),  
+        0 0 30px rgba(255, 255, 255, 0.916);   
     
-    /* Slow, Smooth Animation */
+   
     animation: colorFlow 5s ease-in-out infinite;
    
 }
@@ -126,23 +126,23 @@ header h1 {
     background: white;
     border-radius: 8px;
     padding: 20px;
-    margin: 0 auto 20px; /* top | right/left (auto centers) | bottom */
+    margin: 0 auto 20px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 100%; /* Prevents stretching full width */
+    max-width: 100%; 
     width: 74%; 
 }
 
 .profile-section {
     
         
-        position: relative; /* Needed for z-index to work properly */
-        z-index: 0; /* Changed from -1 to ensure content is visible */
+        position: relative; 
+        z-index: 0; 
         border-radius: 20px;
-        background-color: rgba(95, 167, 244, 0.7); /* Added transparency */
+        background-color: rgba(95, 167, 244, 0.7);
         background-image: radial-gradient(at 90% 65%, hsl(66, 100%, 87%) 0px, transparent 50%),
                          radial-gradient(at 19% 32%, hsla(93, 65%, 67%, 0.7) 0px, transparent 70%);
-        backdrop-filter: blur(35px); /* This creates the blur effect */
-        -webkit-backdrop-filter: blur(25px); /* For Safari support */
+        backdrop-filter: blur(35px); 
+        -webkit-backdrop-filter: blur(25px); 
        
   }
 
@@ -150,27 +150,27 @@ header h1 {
 .upload-section {
     
         
-    position: relative; /* Needed for z-index to work properly */
-    z-index: 0; /* Changed from -1 to ensure content is visible */
+    position: relative; 
+    z-index: 0; 
     border-radius: 20px;
-    background-color: rgba(95, 167, 244, 0.7); /* Added transparency */
+    background-color: rgba(95, 167, 244, 0.7); 
     background-image: radial-gradient(at 90% 85%, hsl(66, 98%, 87%) 0px, transparent 50%),
                      radial-gradient(at 9% 22%, hsla(93, 92%, 62%, 0.7) 0px, transparent 50%);
-    backdrop-filter: blur(35px); /* This creates the blur effect */
-    -webkit-backdrop-filter: blur(25px); /* For Safari support */
+    backdrop-filter: blur(35px); 
+    -webkit-backdrop-filter: blur(25px); 
    
 }
 
 .suggestions-section{
       
-    position: relative; /* Needed for z-index to work properly */
-    z-index: 0; /* Changed from -1 to ensure content is visible */
+    position: relative; 
+    z-index: 0; 
     border-radius: 20px;
-    background-color: rgba(95, 167, 244, 0.7); /* Added transparency */
+    background-color: rgba(95, 167, 244, 0.7); 
     background-image: radial-gradient(at 95% 90%, hsl(66, 100%, 87%) 0px, transparent 50%),
                      radial-gradient(at 5% 10%, hsla(93, 65%, 67%, 0.7) 0px, transparent 50%);
-    backdrop-filter: blur(35px); /* This creates the blur effect */
-    -webkit-backdrop-filter: blur(25px); /* For Safari support */
+    backdrop-filter: blur(35px); 
+    -webkit-backdrop-filter: blur(25px); 
    
 }
 
@@ -363,7 +363,7 @@ hr {
     max-width: 200px;
 }
 
-/* Upload Container */
+
 .upload-container {
     display: flex;
     flex-direction: column;
@@ -375,7 +375,7 @@ hr {
     padding: 20px;
 }
 
-/* Folder Upload Component */
+
 .folder-container {
     --transition: 350ms;
     --folder-W: 120px;
@@ -503,7 +503,7 @@ hr {
     }
 }
 
-/* Preview Container */
+
 .preview-container {
     display: flex;
     flex-wrap: wrap;
@@ -579,7 +579,7 @@ hr {
     100% { transform: rotate(360deg); }
 }
 
-/* Virtual Try-On Section Styles */
+
 .virtual-tryon-section {
     margin-top: 40px;
     padding: 20px;
@@ -655,7 +655,7 @@ hr {
     border: 1px solid #eee;
 }
 
-/* Virtual Try-On Specific Styles */
+
 .outfit-tryon {
     margin-bottom: 30px;
     padding: 20px;
@@ -708,7 +708,7 @@ hr {
     margin-bottom: 15px;
 }
 
-/* Virtual Try-On Section */
+
 #virtual-tryon-section {
     display: none;
     margin-top: 2rem;
@@ -805,7 +805,7 @@ hr {
     text-align: center;
 }
 
-/* Outfit items matching preview container style */
+
 .outfit-items-preview {
     display: flex;
     flex-wrap: wrap;
@@ -833,20 +833,20 @@ hr {
     word-break: break-word;
 }
 
-/* Hide the composite image completely */
+
 .outfit-composite {
     display: none !important;
 }
 
-/* Remove any vertical listing styles */
+
 .outfit-items, .outfit-item {
     display: none !important;
 }
 
 #message {
-    width: 97.5%;   /* Width in pixels */
-    height: 18%;  /* Height in pixels */
-    max-width: 100%; /* Ensures responsiveness */
+    width: 97.5%;   
+    height: 18%;  
+    max-width: 100%; 
     
 }
 
