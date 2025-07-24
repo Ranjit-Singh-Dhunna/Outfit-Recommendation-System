@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drip Genius</title>
+    <link rel="stylesheet" href="/static/drip_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=My+Soul&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cinzel+Decorative:wght@400;700;900&family=Inconsolata:wght@200..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="tited">Drip Genius</h1>
+        </header>
+
+        <div class="upload-section">
+            <h2>Upload Your Clothing Items</h2>
+            <br><br>
+            <div class="upload-container">
+                <div class="folder-container">
+                    <div class="folder">
+                        <div class="front-side">
+                            <div class="tip"></div>
+                            <div class="cover"></div>
+                        </div>
+                        <div class="back-side cover"></div>
+                    </div>
+                    <label class="custom-file-upload">
+                        <input type="file" id="file-input" multiple accept="image/*" />
+                        Choose your clothing files
+                    </label>
+                </div>
+                <div id="file-status" class="file-status">No files selected</div>
+                <div id="preview-container" class="preview-container"></div>
+            </div>
+        </div>
+
+        <div class="profile-section">
+            <h2>Tell Us About Yourself</h2>
+            <form id="profile-form">
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <input type="text" id="gender" placeholder="e.g., male, female" required>
+                </div>
+                <div class="form-group">
+                    <label for="skin-tone">Skin Tone:</label>
+                    <input type="text" id="skin-tone" placeholder="e.g., olive, fair" required>
+                </div>
+                <div class="form-group">
+                    <label for="body-type">Body Type:</label>
+                    <input type="text" id="body-type" placeholder="e.g., athletic, petite" required>
+                </div>
+                <div class="form-group">
+                    <label for="style">Preferred Style:</label>
+                    <input type="text" id="style" placeholder="e.g., casual, formal" required>
+                </div>
+                <div class="form-group">
+                    <label for="occasion">Occasion:</label>
+                    <input type="text" id="occasion" placeholder="e.g., work, party" required>
+                </div>
+                <div class="form-group">
+                    <label for="facial">Facial hair (If applicable):</label>
+                    <input type="text" id="facial" placeholder="e.g., beard, Stubble" >
+                </div>
+                <div class="form-group">
+                    <label for="num">Number of outfits to be suggested:</label>
+                    <input type="text" id="num"  required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Any note:</label>
+                    <textarea id="message" name="message" rows="5" cols="40" placeholder="Type your message here (if any) ..."></textarea>
+                </div>
+            </form>
+        </div>
+
+        <div class="suggestions-section">
+            <h2>Get Outfit Suggestions</h2>
+            <button id="generate-btn">Generate Suggestions</button>
+            <div id="suggestions" class="suggestions"></div>
+        </div>
+    </div> 
+
+    <script src="/static/drip_app.js"></script>
+</body>
+</html>

@@ -1,0 +1,857 @@
+body {
+    
+    line-height: 1.6;
+    color:  #040ac4b4;
+    background-color: hsl(67, 47%, 82%);
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(35px); /* This creates the blur effect */
+    -webkit-backdrop-filter: blur(25px);  
+    background: 
+        radial-gradient(
+            circle at 20% 30%, 
+            hsla(142, 91%, 31%, 0.357),  /* Vibrant green */
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 80% 60%, 
+            rgba(57, 67, 2, 0.183),  /* Soft blue */
+            transparent 90%
+        ),
+        radial-gradient(
+            circle at 40% 80%, 
+            hsla(169, 92%, 42%, 0.395),  /* Light yellow */
+            transparent 50%
+        ),
+        linear-gradient(
+            to bottom right, 
+            hsl(240, 47%, 27%),  /* Deep purple-black */
+            hsla(74, 77%, 14%, 0.949)   /* Rich dark blue */
+        );
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        inset 0 0 20px rgba(95, 167, 244, 0.1);
+
+        font-family: "Roboto Flex", sans-serif;
+        font-optical-sizing: auto;
+        
+
+        
+}
+#tited {
+    font-family: "My Soul", cursive;
+  font-weight: 400;
+  
+  font-style: normal;
+    font-size: 300%;
+    margin-top: 0%;
+    padding: 1.75% 0 3.2% 0;
+    
+    
+    /* Text Stretching */
+   
+    transform: scaleX(2.9) scaleY(2.6);
+    
+    /* Gradient with Blurred Edges */
+    background: 
+        linear-gradient(90deg, 
+        rgb(216, 255, 174) 0%,    /* Soft Blue */
+        hsl(181, 100%, 50%) 50%,   /* Soft Green */
+        hsl(128, 83%, 84%) 100%    /* Soft Red */
+        );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+    /* Glow + Blur Effects */
+    text-shadow: 
+        0 0 10px rgba(50, 252, 252, 0.58),  /* Blue glow */
+        0 0 20px rgba(59, 227, 129, 0.694),  /* Green glow */
+        0 0 30px rgba(255, 255, 255, 0.916);   /* Red glow */
+    
+    /* Slow, Smooth Animation */
+    animation: colorFlow 5s ease-in-out infinite;
+   
+}
+
+@keyframes colorFlow {
+    0% { 
+        background-position: 0% 50%;
+        text-shadow: 
+            0 0 15px rgba(61, 121, 79, 0.838), 
+            0 0 25px rgba(60, 124, 91, 0.883);
+    }
+    50% { 
+        background-position: 100% 50%;
+        text-shadow: 
+            0 0 20px rgba(38, 138, 80, 0.708), 
+            0 0 30px rgba(33, 126, 64, 0.67);
+    }
+    100% { 
+        background-position: 0% 50%;
+        text-shadow: 
+            0 0 15px rgba(35, 133, 22, 0.884), 
+            0 0 25px rgb(71, 127, 31);
+    }
+}
+
+.container {
+    font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.upload-section, 
+.profile-section, 
+.suggestions-section {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto 20px; /* top | right/left (auto centers) | bottom */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Prevents stretching full width */
+    width: 74%; 
+}
+
+.profile-section {
+    
+        
+        position: relative; /* Needed for z-index to work properly */
+        z-index: 0; /* Changed from -1 to ensure content is visible */
+        border-radius: 20px;
+        background-color: rgba(95, 167, 244, 0.7); /* Added transparency */
+        background-image: radial-gradient(at 90% 65%, hsl(66, 100%, 87%) 0px, transparent 50%),
+                         radial-gradient(at 19% 32%, hsla(93, 65%, 67%, 0.7) 0px, transparent 70%);
+        backdrop-filter: blur(35px); /* This creates the blur effect */
+        -webkit-backdrop-filter: blur(25px); /* For Safari support */
+       
+  }
+
+
+.upload-section {
+    
+        
+    position: relative; /* Needed for z-index to work properly */
+    z-index: 0; /* Changed from -1 to ensure content is visible */
+    border-radius: 20px;
+    background-color: rgba(95, 167, 244, 0.7); /* Added transparency */
+    background-image: radial-gradient(at 90% 85%, hsl(66, 98%, 87%) 0px, transparent 50%),
+                     radial-gradient(at 9% 22%, hsla(93, 92%, 62%, 0.7) 0px, transparent 50%);
+    backdrop-filter: blur(35px); /* This creates the blur effect */
+    -webkit-backdrop-filter: blur(25px); /* For Safari support */
+   
+}
+
+.suggestions-section{
+      
+    position: relative; /* Needed for z-index to work properly */
+    z-index: 0; /* Changed from -1 to ensure content is visible */
+    border-radius: 20px;
+    background-color: rgba(95, 167, 244, 0.7); /* Added transparency */
+    background-image: radial-gradient(at 95% 90%, hsl(66, 100%, 87%) 0px, transparent 50%),
+                     radial-gradient(at 5% 10%, hsla(93, 65%, 67%, 0.7) 0px, transparent 50%);
+    backdrop-filter: blur(35px); /* This creates the blur effect */
+    -webkit-backdrop-filter: blur(25px); /* For Safari support */
+   
+}
+
+
+.profile-section h2 {
+    
+    color: #040ac4b4;
+    margin-bottom: 20px;
+    
+}
+
+.profile-section .form-group {
+    margin-bottom: 15px;
+}
+
+.profile-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.profile-section input[type="text"],
+.profile-section textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: rgb(225, 250, 248);
+    color: rgb(38, 15, 104);
+    font-size: 16px;
+}
+
+.profile-section textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.profile-section input[type="text"]::placeholder,
+.profile-section textarea::placeholder {
+    color: #2d0a0a;
+    opacity: 1;
+}
+
+
+
+
+h2 {
+    font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+    color: #040ac4b4;
+    margin-top: 0;
+    
+
+}
+
+#file-input {
+    display: none;
+}
+
+#upload-btn, #generate-btn {
+    font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+  font-style: normal; 
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+#upload-btn:hover, #generate-btn:hover {
+    background-color: #2980b9;
+}
+
+.preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-top: 20px;
+}
+
+.preview-container img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    color: #040ac4b4;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.suggestions {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgb(225, 250, 248);
+    border-radius: 4px;
+    white-space: pre-line;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.loading:after {
+    content: "...";
+    animation: dots 1.5s steps(5, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% { content: "."; }
+    40% { content: ".."; }
+    60% { content: "..."; }
+    80%, 100% { content: ""; }
+}
+
+.outfit-suggestion {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.outfit-images {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.outfit-image {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.outfit-reasoning {
+    padding: 10px;
+    background: white;
+    border-radius: 4px;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.outfit-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.outfit-image {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.image-label {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    word-break: break-all;
+    max-width: 200px;
+}
+
+/* Upload Container */
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Folder Upload Component */
+.folder-container {
+    --transition: 350ms;
+    --folder-W: 120px;
+    --folder-H: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    height: calc(var(--folder-H) * 1.7);
+    position: relative;
+    width: 100%;
+}
+
+.folder {
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 60px);
+    animation: float 2.5s infinite ease-in-out;
+    transition: transform var(--transition) ease;
+}
+
+.folder:hover {
+    transform: scale(1.05);
+}
+
+.folder .front-side,
+.folder .back-side {
+    position: absolute;
+    transition: transform var(--transition);
+    transform-origin: bottom center;
+}
+
+.folder .back-side::before,
+.folder .back-side::after {
+    content: "";
+    display: block;
+    background-color: white;
+    opacity: 0.5;
+    z-index: 0;
+    width: var(--folder-W);
+    height: var(--folder-H);
+    position: absolute;
+    transform-origin: bottom center;
+    border-radius: 15px;
+    transition: transform 350ms;
+    z-index: 0;
+}
+
+.folder-container:hover .back-side::before {
+    transform: rotateX(-5deg) skewX(5deg);
+}
+
+.folder-container:hover .back-side::after {
+    transform: rotateX(-15deg) skewX(12deg);
+}
+
+.folder .front-side {
+    z-index: 1;
+}
+
+.folder-container:hover .front-side {
+    transform: rotateX(-40deg) skewX(15deg);
+}
+
+.folder .tip {
+    background: linear-gradient(135deg, #ff9a56, #ff6f56);
+    width: 80px;
+    height: 20px;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: -10px;
+    z-index: 2;
+}
+
+.folder .cover {
+    background: linear-gradient(135deg, #ffe563, #ffc663);
+    width: var(--folder-W);
+    height: var(--folder-H);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.custom-file-upload {
+    font-size: 1.1em;
+    color: #ffffff;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background var(--transition) ease;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 35px;
+    position: relative;
+    z-index: 2;
+}
+
+.custom-file-upload:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.file-status {
+    color: #555;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Preview Container */
+.preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.preview-item {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.preview-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.remove-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+}
+
+.error {
+    background-color: #ffeeee;
+    border: 1px solid #ffcccc;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.error h3 {
+    color: #d32f2f;
+    margin-top: 0;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Virtual Try-On Section Styles */
+.virtual-tryon-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.tryon-upload {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px dashed #ccc;
+}
+
+.tryon-upload label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.user-photo {
+    max-width: 200px;
+    max-height: 300px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+#generate-tryon-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#generate-tryon-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.tryon-outfits {
+    margin-top: 20px;
+}
+
+.tryon-outfit {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.tryon-comparison {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.tryon-item {
+    flex: 1;
+    min-width: 200px;
+}
+
+.tryon-item img {
+    max-width: 100%;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+
+/* Virtual Try-On Specific Styles */
+.outfit-tryon {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.tryon-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.tryon-item {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tryon-original, .tryon-result {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tryon-original img, .tryon-result img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.tryon-error {
+    color: #d32f2f;
+    padding: 10px;
+    background: #ffebee;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.outfit-reasoning {
+    color: #555;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* Virtual Try-On Section */
+#virtual-tryon-section {
+    display: none;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.tryon-instructions {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.upload-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.upload-btn:hover {
+    background: #3367d6;
+}
+
+.user-photo-preview {
+    max-width: 300px;
+    margin: 0 auto 1.5rem;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.user-photo-preview img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tryon-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.tryon-btn {
+    padding: 8px 16px;
+    background: #34a853;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.tryon-btn:hover {
+    background: #2d9248;
+}
+
+.tryon-result-container {
+    text-align: center;
+    min-height: 200px;
+    position: relative;
+}
+
+#tryon-result-image {
+    max-width: 100%;
+    max-height: 500px;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.loading-tryon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.tryon-error {
+    color: #d32f2f;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Outfit items matching preview container style */
+.outfit-items-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.outfit-item-preview {
+    position: relative;
+    width: 120px;
+    text-align: center;
+}
+
+.outfit-item-preview img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.outfit-item-preview p {
+    margin-top: 5px;
+    font-size: 13px;
+    word-break: break-word;
+}
+
+/* Hide the composite image completely */
+.outfit-composite {
+    display: none !important;
+}
+
+/* Remove any vertical listing styles */
+.outfit-items, .outfit-item {
+    display: none !important;
+}
+
+#message {
+    width: 97.5%;   /* Width in pixels */
+    height: 18%;  /* Height in pixels */
+    max-width: 100%; /* Ensures responsiveness */
+    
+}
+
+.profile-section input[type="text"], .profile-section textarea{
+    font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 100;
+  font-style: normal; 
+}
