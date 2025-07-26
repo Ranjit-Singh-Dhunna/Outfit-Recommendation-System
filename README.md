@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>DRIP CHECK</h1>
+  <h1>DRIP GENIUS</h1>
   <p><i>Personalized outfit recommendations powered by Roboflow model + Gemini AI</i></p>
   
 </div>
@@ -10,7 +10,7 @@
 
 > Imagine a tool that helps you turn simple wardrobe photos into styled, confidence-boosting outfit ideas — instantly.
 
-**DRIP CHECK** does just that.  
+**DRIP GENIUS** does just that.  
 Whether you're planning a look for an event or simply organizing your wardrobe, this platform blends modern web design, computer vision, and AI to deliver personalized fashion recommendations in real time.
 
 
