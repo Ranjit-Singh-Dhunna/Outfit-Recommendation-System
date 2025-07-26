@@ -108,16 +108,15 @@ flowchart TD
 
 
 ---
-
 ## 🎥 Demo
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=LjIaYI_8Rxg" target="_blank">
-    <img src="https://www.youtube.com/watch?v=LjIaYI_8Rxg" alt="Watch Demo" width="700"/>
+  <a href="https://youtu.be/LjIaYI_8Rxg" target="_blank">
+    <img src="https://img.youtube.com/vi/LjIaYI_8Rxg/hqdefault.jpg" alt="Watch Demo" width="700"/>
   </a>
 </p>
 
-> 🎬 Click the image above to watch the full demo (1:09).
+> 🎬 Click the image above to watch the full demo (1:08).
 
 ---
 
